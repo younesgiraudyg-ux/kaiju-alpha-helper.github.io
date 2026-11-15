@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godzilla 2014 - Kaiju Alpha Helper</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0f14;
+            color: white;
+        }
+
+        header {
+            background: #111923;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #263445;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #aeb8c5;
+            font-size: 18px;
+        }
+
+        nav {
+            background: #151e29;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4da3ff;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .kaiju-header {
+            background: #151e29;
+            border: 1px solid #263445;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .kaiju-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .kaiju-info {
+            padding: 30px;
+        }
+
+        .kaiju-info h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .kaiju-info p {
+            color: #aeb8c5;
+            font-size: 18px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .stat {
+            background: #151e29;
+            border: 1px solid #263445;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .stat h3 {
+            color: #4da3ff;
+            margin-bottom: 10px;
+        }
+
+        .stat p {
+            font-size: 18px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 20px;
+            background: #151e29;
+            border: 1px solid #263445;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back:hover {
+            border-color: #4da3ff;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 25px;
+            text-align: center;
+            background: #111923;
+            color: #7f8b99;
+        }
+
+        @media (max-width: 700px) {
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🦖 KAIJU ALPHA HELPER</h1>
+    <p>The ultimate guide to getting started in Kaiju Alpha</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="kaijus.html">Kaijus</a>
+    <a href="guides.html">Guides</a>
+    <a href="farm.html">Farming</a>
+    <a href="actualites.html">News</a>
+</nav>
+
+<section class="content">
+
+    <div class="kaiju-header">
+
+        <img
+            class="kaiju-image"
+            src="Capture%20d'écran%202026-11-15%20103325.png"
+            alt="Godzilla 2014">
+
+        <div class="kaiju-info">
+            <h2>Godzilla 2014</h2>
+            <p>G14 • MonsterVerse</p>
+        </div>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="stat">
+            <h3>Type</h3>
+            <p>Godzilla</p>
+        </div>
+
+        <div class="stat">
+            <h3>Era</h3>
+            <p>MonsterVerse</p>
+        </div>
+
+        <div class="stat">
+            <h3>Game</h3>
+            <p>Kaiju Alpha</p>
+        </div>
+
+    </div>
+
+    <a class="back" href="monsterverse.html">
+        ← Back to MonsterVerse
+    </a>
+
+</section>
+
+<footer>
+    Kaiju Alpha Helper © 2026
+</footer>
+
+</body>
+</html>
