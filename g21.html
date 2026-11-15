@@ -102,13 +102,14 @@
         }
 
         .info-box p {
-            color: #d6dde5;
             margin: 8px 0;
             line-height: 1.5;
         }
 
-        .orange {
-            color: #ff9d2e;
+        /* COLORS */
+
+        .yellow {
+            color: #ffd43b;
             font-weight: bold;
         }
 
@@ -122,8 +123,18 @@
             font-weight: bold;
         }
 
+        .red {
+            color: #ff4d4d;
+            font-weight: bold;
+        }
+
         .abilities {
-            margin-top: 25px;
+            margin-top: 35px;
+        }
+
+        .abilities-title {
+            font-size: 30px;
+            margin-bottom: 20px;
         }
 
         .ability {
@@ -142,6 +153,11 @@
         .ability p {
             color: #c5ced8;
             line-height: 1.5;
+        }
+
+        .damage {
+            color: #ff4d4d !important;
+            font-weight: bold;
         }
 
         .passive {
@@ -215,25 +231,25 @@
 
     <div class="info-grid">
 
-        <!-- HOW TO GET -->
+        <!-- REQUIREMENTS -->
         <div class="info-box">
-            <h3>🟠 How to Get</h3>
+            <h3>🟡 How to Get</h3>
 
-            <p class="orange">Have 175,000 cells</p>
+            <p class="yellow">Have 175,000 cells</p>
 
-            <p class="orange">
+            <p class="yellow">
                 Have Godzilla 2014 lvl 20
             </p>
 
-            <p class="orange">
+            <p class="yellow">
                 Have 10 kills with Godzilla 2014
             </p>
 
-            <p class="orange">
+            <p class="yellow">
                 Have Godzilla 2019 lvl 30
             </p>
 
-            <p class="orange">
+            <p class="yellow">
                 Have 10 kills with Godzilla G19
             </p>
 
@@ -241,7 +257,7 @@
 
         <!-- HEALTH -->
         <div class="info-box">
-            <h3>❤️ Health</h3>
+            <h3>🟢 Health</h3>
 
             <p class="green">5,125</p>
 
@@ -249,7 +265,7 @@
 
         <!-- SPEED -->
         <div class="info-box">
-            <h3>🏃 Speed</h3>
+            <h3>🔵 Speed</h3>
 
             <p class="blue">
                 RunSpeed: 13 &nbsp; | &nbsp;
@@ -265,35 +281,37 @@
     <!-- ABILITIES -->
     <div class="abilities">
 
-        <h3 style="font-size: 30px; margin-bottom: 20px;">
+        <h3 class="abilities-title">
             ⚔️ Abilities
         </h3>
 
         <div class="ability">
             <h4>Move 1: Slap</h4>
-            <p>310 × 2</p>
+            <p class="damage">310 × 2</p>
         </div>
 
         <div class="ability">
             <h4>Move 2: Dash</h4>
-            <p>450</p>
+            <p class="damage">450</p>
         </div>
 
         <div class="ability">
             <h4>Move 3: Tail Whip</h4>
-            <p>600</p>
+            <p class="damage">600</p>
         </div>
 
         <div class="ability">
             <h4>Move 4: Tail Sunder</h4>
-            <p>150 × 3</p>
+            <p class="damage">150 × 3</p>
         </div>
 
         <div class="ability">
             <h4>Move 5: Atomic</h4>
-            <p>200 / hit</p>
+            <p class="damage">200 / hit</p>
 
-            <p>Hollow Quarry = 300 / hit</p>
+            <p class="damage">
+                Hollow Quarry = 300 / hit
+            </p>
         </div>
 
         <div class="ability passive">
