@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonsterVerse - Kaiju Alpha Helper</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0f14;
+            color: white;
+        }
+
+        header {
+            background: #111923;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #263445;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #aeb8c5;
+            font-size: 18px;
+        }
+
+        nav {
+            background: #151e29;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4da3ff;
+        }
+
+        .content {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .content h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 35px;
+        }
+
+        .kaiju-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .kaiju-card {
+            display: block;
+            background: #151e29;
+            border: 1px solid #263445;
+            border-radius: 15px;
+            overflow: hidden;
+            text-decoration: none;
+            color: white;
+            transition: 0.2s;
+        }
+
+        .kaiju-card:hover {
+            transform: translateY(-6px);
+            border-color: #4da3ff;
+        }
+
+        .kaiju-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .kaiju-info {
+            padding: 18px;
+            text-align: center;
+        }
+
+        .kaiju-info h3 {
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+
+        .kaiju-info p {
+            color: #aeb8c5;
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 25px;
+            text-align: center;
+            background: #111923;
+            color: #7f8b99;
+        }
+
+        @media (max-width: 900px) {
+            .kaiju-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .kaiju-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🦖 KAIJU ALPHA HELPER</h1>
+    <p>The ultimate guide to getting started in Kaiju Alpha</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="kaijus.html">Kaijus</a>
+    <a href="guides.html">Guides</a>
+    <a href="farm.html">Farming</a>
+    <a href="actualites.html">News</a>
+</nav>
+
+<section class="content">
+
+    <h2>🌎 MonsterVerse</h2>
+
+    <div class="kaiju-grid">
+
+        <a class="kaiju-card" href="g14.html">
+            <img class="kaiju-image" src="g14.png" alt="Godzilla 2014">
+
+            <div class="kaiju-info">
+                <h3>Godzilla 2014</h3>
+                <p>G14</p>
+            </div>
+        </a>
+
+        <a class="kaiju-card" href="g19.html">
+            <img class="kaiju-image" src="g19.png" alt="Godzilla 2019">
+
+            <div class="kaiju-info">
+                <h3>Godzilla 2019</h3>
+                <p>G19</p>
+            </div>
+        </a>
+
+        <a class="kaiju-card" href="g21.html">
+            <img class="kaiju-image" src="g21.png" alt="Godzilla 2021">
+
+            <div class="kaiju-info">
+                <h3>Godzilla 2021</h3>
+                <p>G21</p>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    Kaiju Alpha Helper © 2026
+</footer>
+
+</body>
+</html>
