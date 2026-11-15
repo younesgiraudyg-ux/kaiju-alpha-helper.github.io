@@ -89,7 +89,7 @@
 
         .stats {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             margin-top: 25px;
         }
@@ -99,16 +99,69 @@
             border: 1px solid #263445;
             border-radius: 15px;
             padding: 25px;
-            text-align: center;
         }
 
         .stat h3 {
             color: #4da3ff;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            font-size: 22px;
         }
 
         .stat p {
             font-size: 18px;
+            line-height: 1.8;
+            color: #d9e0e7;
+        }
+
+        .orange {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .green {
+            color: #39d353;
+            font-weight: bold;
+        }
+
+        .blue {
+            color: #4da3ff;
+            font-weight: bold;
+        }
+
+        .abilities {
+            margin-top: 25px;
+            background: #151e29;
+            border: 1px solid #263445;
+            border-radius: 15px;
+            padding: 25px;
+        }
+
+        .abilities h3 {
+            color: #4da3ff;
+            margin-bottom: 18px;
+            font-size: 22px;
+        }
+
+        .ability {
+            background: #111923;
+            border: 1px solid #263445;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 12px;
+        }
+
+        .ability:last-child {
+            margin-bottom: 0;
+        }
+
+        .ability-name {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .damage {
+            color: #ff6b6b;
+            font-weight: bold;
         }
 
         .back {
@@ -176,18 +229,65 @@
     <div class="stats">
 
         <div class="stat">
-            <h3>Type</h3>
-            <p>Godzilla</p>
+            <h3>🟠 How to Get</h3>
+            <p>
+                Have <span class="orange">65,000 cells</span>
+            </p>
         </div>
 
         <div class="stat">
-            <h3>Era</h3>
-            <p>MonsterVerse</p>
+            <h3>❤️ Health</h3>
+            <p>
+                <span class="green">4,350</span>
+            </p>
         </div>
 
         <div class="stat">
-            <h3>Game</h3>
-            <p>Kaiju Alpha</p>
+            <h3>🏃 Speed</h3>
+            <p>
+                <span class="blue">
+                    RunSpeed: 7<br>
+                    WalkSpeed: 3<br>
+                    SwimNormal: 15<br>
+                    SwimSprint: 30
+                </span>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="abilities">
+
+        <h3>⚔️ Abilities</h3>
+
+        <div class="ability">
+            <span class="ability-name">Move 1: Slap</span>
+            <br>
+            Damage: <span class="damage">200</span>
+        </div>
+
+        <div class="ability">
+            <span class="ability-name">Move 2: Bite</span>
+            <br>
+            Damage: <span class="damage">350</span>
+        </div>
+
+        <div class="ability">
+            <span class="ability-name">Stomp</span>
+            <br>
+            Damage: <span class="damage">375</span>
+        </div>
+
+        <div class="ability">
+            <span class="ability-name">Tail Whip</span>
+            <br>
+            Damage: <span class="damage">435</span>
+        </div>
+
+        <div class="ability">
+            <span class="ability-name">Atomic Beam</span>
+            <br>
+            Damage: <span class="damage">120 / hit</span>
         </div>
 
     </div>
