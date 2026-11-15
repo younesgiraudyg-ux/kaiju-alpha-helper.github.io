@@ -113,6 +113,21 @@
             line-height: 1.8;
         }
 
+        .orange {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .green {
+            color: #39d353;
+            font-weight: bold;
+        }
+
+        .blue {
+            color: #4da3ff;
+            font-weight: bold;
+        }
+
         .abilities {
             margin-top: 25px;
             background: #151e29;
@@ -134,10 +149,21 @@
             padding: 15px;
             margin-bottom: 12px;
             font-size: 18px;
+            line-height: 1.7;
         }
 
         .move:last-child {
             margin-bottom: 0;
+        }
+
+        .damage {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .passive {
+            color: #c9a7ff;
+            font-weight: bold;
         }
 
         .back {
@@ -231,12 +257,21 @@
 
     <div class="info">
 
+
         <div class="box">
 
-            <h3>🦖 How to Get</h3>
+            <h3>🟠 How to Get</h3>
 
             <p>
-                Information coming soon
+                Have <span class="orange">150,000 cells</span><br>
+
+                <span class="orange">
+                    Have Godzilla 2014 lvl 50
+                </span><br>
+
+                <span class="orange">
+                    Have 50 kills with Godzilla 2014
+                </span>
             </p>
 
         </div>
@@ -247,7 +282,7 @@
             <h3>❤️ Health</h3>
 
             <p>
-                Information coming soon
+                <span class="green">4,850</span>
             </p>
 
         </div>
@@ -257,11 +292,20 @@
 
             <h3>🏃 Speed</h3>
 
-            <p>
-                Information coming soon
+            <p class="blue">
+
+                RunSpeed: 12<br>
+
+                WalkSpeed: 5<br>
+
+                SwimNormal: 15<br>
+
+                SwimSprint: 30
+
             </p>
 
         </div>
+
 
     </div>
 
@@ -270,8 +314,81 @@
 
         <h3>⚔️ Abilities</h3>
 
+
         <div class="move">
-            Information coming soon
+
+            Move 1: Kings Maul
+
+            <br>
+
+            Damage:
+            <span class="damage">420</span>
+
+        </div>
+
+
+        <div class="move">
+
+            Move 2: Titan Barrage
+
+            <br>
+
+            Damage:
+            <span class="damage">150 × 2</span>
+
+        </div>
+
+
+        <div class="move">
+
+            Move 3: Titanic Combo
+
+            <br>
+
+            Damage:
+            <span class="damage">200 × 3</span>
+
+        </div>
+
+
+        <div class="move">
+
+            Move 4: Tail Sunder
+
+            <br>
+
+            Damage:
+            <span class="damage">150 × 3</span>
+
+        </div>
+
+
+        <div class="move">
+
+            Move 5: Atomic Devastation
+
+            <br>
+
+            No charged:
+            <span class="damage">180 / hit</span>
+
+            <br><br>
+
+            Atmospheric Calamity — Charged:
+            <span class="damage">250 / hit</span>
+
+        </div>
+
+
+        <div class="move">
+
+            <span class="passive">PASSIVE</span>
+
+            <br><br>
+
+            It has a charge of 100, which fills up by attacking
+            other players; when it is charged, Ability 5 changes.
+
         </div>
 
     </div>
