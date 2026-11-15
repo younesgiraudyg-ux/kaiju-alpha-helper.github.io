@@ -92,18 +92,19 @@
         .info-box {
             background: #151e29;
             border: 1px solid #263445;
-            border-radius: 15px;
-            padding: 25px;
+            border-radius: 10px;
+            padding: 18px;
         }
 
         .info-box h3 {
-            font-size: 23px;
+            font-size: 18px;
             margin-bottom: 15px;
         }
 
         .info-box p {
             margin: 8px 0;
             line-height: 1.5;
+            font-size: 14px;
         }
 
         /* COLORS */
@@ -128,45 +129,61 @@
             font-weight: bold;
         }
 
+        /* ABILITIES */
+
         .abilities {
-            margin-top: 35px;
+            margin-top: 20px;
+            background: #151e29;
+            border: 1px solid #263445;
+            border-radius: 10px;
+            padding: 15px;
         }
 
         .abilities-title {
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
-
-        .ability {
-            background: #151e29;
-            border: 1px solid #263445;
-            border-radius: 15px;
-            padding: 20px;
+            font-size: 18px;
+            color: #4da3ff;
             margin-bottom: 15px;
         }
 
-        .ability h4 {
-            font-size: 20px;
+        .ability {
+            background: #111923;
+            border: 1px solid #263445;
+            border-radius: 6px;
+            padding: 14px;
             margin-bottom: 8px;
         }
 
+        .ability h4 {
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+
         .ability p {
-            color: #c5ced8;
+            font-size: 13px;
             line-height: 1.5;
         }
 
+        .damage-label {
+            color: white;
+            font-weight: bold;
+        }
+
         .damage {
-            color: #ff4d4d !important;
+            color: #ff4d4d;
             font-weight: bold;
         }
 
         .passive {
-            border-color: #4da3ff;
+            border-color: #263445;
+        }
+
+        .passive h4 {
+            color: #4da3ff;
         }
 
         .back-button {
             display: inline-block;
-            margin-top: 30px;
+            margin-top: 25px;
             padding: 12px 20px;
             background: #151e29;
             border: 1px solid #263445;
@@ -229,13 +246,16 @@
 
     </div>
 
+    <!-- INFO -->
     <div class="info-grid">
 
-        <!-- REQUIREMENTS -->
+        <!-- HOW TO GET -->
         <div class="info-box">
-            <h3>🟡 How to Get</h3>
+            <h3>🟠 How to Get</h3>
 
-            <p class="yellow">Have 175,000 cells</p>
+            <p class="yellow">
+                Have 175,000 cells
+            </p>
 
             <p class="yellow">
                 Have Godzilla 2014 lvl 20
@@ -257,20 +277,31 @@
 
         <!-- HEALTH -->
         <div class="info-box">
-            <h3>🟢 Health</h3>
+            <h3>💗 Health</h3>
 
-            <p class="green">5,125</p>
+            <p class="green">
+                5,125
+            </p>
 
         </div>
 
         <!-- SPEED -->
         <div class="info-box">
-            <h3>🔵 Speed</h3>
+            <h3>🏃 Speed</h3>
 
             <p class="blue">
-                RunSpeed: 13 &nbsp; | &nbsp;
-                WalkSpeed: 3 &nbsp; | &nbsp;
-                SwimNormal: 15 &nbsp; | &nbsp;
+                RunSpeed: 13
+            </p>
+
+            <p class="blue">
+                WalkSpeed: 3
+            </p>
+
+            <p class="blue">
+                SwimNormal: 15
+            </p>
+
+            <p class="blue">
                 SwimSprint: 30
             </p>
 
@@ -285,37 +316,67 @@
             ⚔️ Abilities
         </h3>
 
+        <!-- MOVE 1 -->
         <div class="ability">
             <h4>Move 1: Slap</h4>
-            <p class="damage">310 × 2</p>
-        </div>
 
-        <div class="ability">
-            <h4>Move 2: Dash</h4>
-            <p class="damage">450</p>
-        </div>
-
-        <div class="ability">
-            <h4>Move 3: Tail Whip</h4>
-            <p class="damage">600</p>
-        </div>
-
-        <div class="ability">
-            <h4>Move 4: Tail Sunder</h4>
-            <p class="damage">150 × 3</p>
-        </div>
-
-        <div class="ability">
-            <h4>Move 5: Atomic</h4>
-            <p class="damage">200 / hit</p>
-
-            <p class="damage">
-                Hollow Quarry = 300 / hit
+            <p>
+                <span class="damage-label">Damage:</span>
+                <span class="damage">310 × 2</span>
             </p>
         </div>
 
+        <!-- MOVE 2 -->
+        <div class="ability">
+            <h4>Move 2: Dash</h4>
+
+            <p>
+                <span class="damage-label">Damage:</span>
+                <span class="damage">450</span>
+            </p>
+        </div>
+
+        <!-- MOVE 3 -->
+        <div class="ability">
+            <h4>Move 3: Tail Whip</h4>
+
+            <p>
+                <span class="damage-label">Damage:</span>
+                <span class="damage">600</span>
+            </p>
+        </div>
+
+        <!-- MOVE 4 -->
+        <div class="ability">
+            <h4>Move 4: Tail Sunder</h4>
+
+            <p>
+                <span class="damage-label">Damage:</span>
+                <span class="damage">150 × 3</span>
+            </p>
+        </div>
+
+        <!-- MOVE 5 -->
+        <div class="ability">
+            <h4>Move 5: Atomic</h4>
+
+            <p>
+                <span class="damage-label">Damage:</span>
+                <span class="damage">200 / hit</span>
+            </p>
+
+            <br>
+
+            <p>
+                <span class="damage-label">Hollow Quarry:</span>
+                <span class="damage">300 / hit</span>
+            </p>
+        </div>
+
+        <!-- PASSIVE -->
         <div class="ability passive">
-            <h4>🔵 PASSIVE</h4>
+
+            <h4>PASSIVE</h4>
 
             <p>
                 It has a charge of 100, which fills up by attacking other players;
